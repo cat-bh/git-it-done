@@ -15,6 +15,8 @@ var getUserRepos = function (user) {
     } else {
       alert("Error! User not found");
     } 
+  }).catch(function(error) {
+    alert("Unable to connect to GitHub");
   });
 };
 
